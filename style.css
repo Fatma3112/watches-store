@@ -1,0 +1,387 @@
+*{
+   margin: 0;
+   padding: 0; 
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+  
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    width: 100%;
+    padding: 15px, 30px;
+    box-shadow: 0 10px 15px rgba(25,25,25,0.1);
+}
+.navbar-nav .nav-item .nav-link{
+ color: rgb(5,5,5);
+ transition: all 0.6s ease;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    background-color:rgb(255,0,0,0.507);
+    font-size: 18px;
+}
+/* end navbar*/
+
+/*header*/
+header{
+    background-color: rgb(240,240,242);
+    margin-top: 50px;
+}
+header .container .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container .row h1{
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: rgb(11,28,57)
+}
+header .container .row a{
+    text-decoration: none;
+    padding: 15px 29px;
+    background-color: rgb(74,74,75) ;
+    color: rgb(255,255,255);
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+header .container .row p{
+    font-size: 17px ;
+    padding: 30px 0;
+    line-height: 1.6;
+    font-weight: 400;
+    color: rgb(11,28,57);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+header .container .row a{
+    background: linear-gradient(to left, #4a4a4b ,#4a4a4b) no-repeat;
+    background-size: 0%;
+    background-color: rgb(236, 11, 11);
+    transition: all 0.5s ease;
+}
+header .container .row a:hover{
+     background-size: 100%;
+}
+/* end header*/
+
+.products1{
+    padding: 40px 0 ;   
+}
+.products1 .row h2{
+    color:black ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 1;
+}
+.products1 .boxes .box{
+    margin-bottom: 30px;
+}
+.products1 .boxes .box .img-zoom{
+    overflow: hidden;
+}
+.products1 .boxes .box .img-zoom img{
+    width: 100%;
+    transition: transform 0.7s ease;
+}
+.products1 .boxes .box .img-zoom img:hover{
+    transform: scale(1.1);
+}
+.products1 .boxes .box .text{
+    text-align: center;
+}
+.products1 .boxes .box a{
+    text-decoration: none;
+    color: #444444;
+    font-weight: 300;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.products1 .boxes .box span{
+    color: rgb(236, 11, 11);
+    font-size: 18px;
+    font-weight: 300;
+    padding: 10px 0 20px 0;
+}
+/*end body1*/
+ 
+
+/*end gallery*/
+ 
+.gallery .container-fluid{
+    padding: 0;
+    overflow: hidden;
+}
+.gallery .container-fluid .single-gallery{
+    overflow: hidden;
+    margin-bottom: 30px; 
+}
+
+
+.container-fluid .row .image{
+    overflow: hidden;
+    transition: all 0.5s ease;
+    transform: scale(1.06);
+    margin-right: 10px ;
+}
+.container-fluid .row .image:hover{
+    transform: scale(1);
+    filter: brightness(0.6);
+}
+.container-fluid .row .small-image{
+    margin-bottom: 40px;
+   
+   
+}
+.container-fluid .row .mid-image{
+    margin-bottom: 50px;
+   
+}
+.container-fluid .row .big-image{
+    margin-bottom: 60px;
+}
+
+/*end gallery*/
+ h2{
+display: flex;
+justify-content: center;
+margin-top: 30px;
+margin-bottom: 20px;
+ color:black ;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 37px;
+font-weight: 700;
+line-height: 1;
+padding-top: 50px;
+
+}
+.popular-items p{
+    display: flex;
+   justify-content: center;
+   text-align: center;
+   font-size: 16px;
+   color:#777;
+   padding-bottom:30px ;
+   
+}
+.popular-items .heading{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.popular-items h3{
+    text-decoration: none;
+    color: #444444;
+    font-weight: 300;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.popular-items span{
+    color: red;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 10px 0 20px 0;
+}
+.popular-items .box{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.popular-items .img-zoom{
+    position: relative;
+    border-bottom: 3px solid rgb(236, 11, 11);
+
+}
+.popular-items img{
+    width: 100%;
+}
+.popular-items i{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+}
+
+.popular-items .img-zoom a{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(236, 11, 11);
+    padding: 20px;
+}
+.popular-items .img-zoom a{
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.popular-items .img-zoom:hover i{
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.popular-items i{
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.popular-items .img-zoom:hover a{
+    opacity: 1;
+    transition: all 0.5s ease;
+    padding-bottom: 20px;
+}
+.popular-items .text{
+    padding-top: 30px;
+    text-align: center;
+}
+.row-btn a{
+    border: none;
+    background-color: rgb(236, 11, 11);
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+    background: linear-gradient(to left, #4a4a4b, #4a4a4b) no-repeat;
+    background-size: 0%;
+    background-color: rgb(236, 11, 11);
+    font-size: 18px;
+    text-decoration: none;
+    position: absolute;
+    right: 41%;
+}
+.row-btn a:hover{
+    background-size: 100%;
+}
+.row-btn{
+   margin-top: 60px;
+   margin-bottom: 60px;
+}
+/*end popular items*/
+
+.choose-watch{
+    margin-top: 300px;
+}
+.choose-watch h1{
+    font-family: cursive;
+    font-weight: 700px;
+    margin-bottom: 40px;
+    line-height: 1;
+}
+.choose-watch p{
+    letter-spacing: 2px;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+.choose-watch a{ 
+    border: none;
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+    background: linear-gradient(to left, #4a4a4b, #4a4a4b) no-repeat;
+    background-size: 0%;
+    background-color: rgb(236, 11, 11);
+    font-size: 18px;
+    text-decoration: none;
+    margin: 40px;
+    letter-spacing: 2px;
+}
+.choose-watch a:hover{
+    background-size: 100%;
+}
+/*end choose-watch*/
+.payment{
+    background-color: rgb(236, 11, 11);
+    margin: 100px;
+    padding: 50px 10px;
+}
+
+.payment .box{
+    margin-bottom: 60px
+}
+.payment .box h6{
+    font-weight: 700;
+    font-size: 22px;
+    color: white;
+    line-height: 2px;
+    letter-spacing: 2px;
+}
+.payment .box p{
+    color: rgba(255, 255, 255, 0.765); 
+    margin-top: 30px;
+    letter-spacing: 2px;  
+}
+.payment img{
+ width: 60px;
+ 
+ margin-bottom: 60px;
+  
+}
+.payment  .img-im{
+    width: 60px;
+    
+    margin-bottom: 30px;
+     
+   }
+/*end payment*/
+
+.footer .row img{
+   margin-bottom: 40px;
+   margin-top: 30px;
+
+}
+.footer .row p{
+    color: rgba(0, 0, 0, 0.48);
+    line-height: 2;
+    font-size: 16px;
+    
+}
+.footer .row h4{
+    color: rgb(0, 0, 0);
+    font-size: 20pxpx;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.footer .row a{
+    color: rgba(0, 0, 0, 0.488);
+    line-height: 2.5;
+    text-decoration: none;
+    transition: all 0.7s ease;
+}
+.footer .row a:hover{
+    color: red;
+    font-size: 18px;
+}
+/*end footer*/
+.bottom {
+    margin-top: 60px;
+}
+.bottom p{
+    color: rgba(0, 0, 0, 0.461);
+}
+.bottom p a{
+    color: red;
+}
+.bottom p span{
+    color: red;
+}
+.bottom a {
+    
+    padding-right: 30px;
+    transition: all 0.5s ease-in-out;
+}
+.bottom a :hover{
+    color: red;
+    cursor: pointer;
+    transform: rotateY(250deg);
+}
